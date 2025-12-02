@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { LaserFlow } from '../ui/laser-flow';
 
 export const HeroSection: React.FC = () => {
-  const revealImgRef = useRef<HTMLDivElement>(null);
   const headlinesRef = useRef<HTMLDivElement>(null);
 
   return (

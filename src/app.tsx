@@ -87,16 +87,15 @@ const App: React.FC = () => {
             
             <div className="pt-6 border-t border-white/5">
               <p className="text-neutral-400 text-sm">
-                Website Designed & Developed by{' '}
+                Designed & Developed by{' '}
                 <a
                   href="https://portfolio.ahmxd.net"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white font-medium relative inline-block transition-all duration-300 hover:text-starlight-300 group"
+                  className="relative inline-block font-medium text-[#8B5CF6] hover:text-[#A78BFA] transition-colors duration-300 group"
                 >
-                  <span className="relative z-10">Salman Ahmad</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-starlight-300 transition-all duration-300 group-hover:w-full z-10" />
-                  <span className="absolute inset-0 -inset-x-2 blur-lg bg-starlight-400/0 transition-all duration-300 group-hover:bg-starlight-400/40 -z-10" />
+                  Salman Ahmad
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#8B5CF6] transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </p>
             </div>
