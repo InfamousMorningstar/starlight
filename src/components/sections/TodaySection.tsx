@@ -35,7 +35,7 @@ export const TodaySection: React.FC = () => {
           whileInView={{ opacity: 0.18, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 2 }}
-          className="absolute top-20 right-20 text-6xl md:text-7xl font-bold text-starlight-400/18 rotate-6"
+          className="hidden lg:block absolute top-20 right-20 text-6xl md:text-7xl font-bold text-starlight-400/18 rotate-6"
         >
           CHANGE
         </motion.div>
@@ -53,7 +53,7 @@ export const TodaySection: React.FC = () => {
           whileInView={{ opacity: 0.15 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="absolute top-1/2 right-40 text-5xl md:text-6xl text-starlight-500/15"
+          className="hidden lg:block absolute top-1/2 right-40 text-5xl md:text-6xl text-starlight-500/15"
         >
           RECONCILIATION
         </motion.div>
@@ -84,7 +84,7 @@ export const TodaySection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-6">Why It Matters Today</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">Why It Matters Today</h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             The legacy of Starlight Tours is not just history; it shapes current conversations about justice and reconciliation.
           </p>
@@ -117,7 +117,7 @@ export const TodaySection: React.FC = () => {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">Voices for Change</h3>
+          <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold text-white mb-8 text-center">Voices for Change</h3>
           <InfiniteMovingCards
             items={testimonials}
             direction="right"

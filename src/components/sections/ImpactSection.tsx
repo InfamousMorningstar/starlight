@@ -13,7 +13,7 @@ export const ImpactSection: React.FC = () => {
           whileInView={{ opacity: 0.2, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 2 }}
-          className="absolute top-32 left-0 text-8xl md:text-9xl font-bold text-starlight-500/18"
+          className="hidden lg:block absolute top-32 left-0 text-8xl md:text-9xl font-bold text-starlight-500/18"
         >
           SYSTEMIC
         </motion.div>
@@ -40,7 +40,7 @@ export const ImpactSection: React.FC = () => {
           whileInView={{ opacity: 0.15 }}
           viewport={{ once: true }}
           transition={{ delay: 1.1 }}
-          className="absolute bottom-20 left-10 text-6xl font-bold text-starlight-400/15 rotate-[-5deg]"
+          className="hidden md:block absolute bottom-20 left-10 text-6xl font-bold text-starlight-400/15 rotate-[-5deg]"
         >
           RACISM
         </motion.div>
@@ -53,7 +53,7 @@ export const ImpactSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-6">Systemic Racism & Impact</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">Systemic Racism & Impact</h2>
           <p className="text-lg text-gray-400">
             The "Starlight Tours" were not isolated incidents of rogue officers, but symptoms of a deeper systemic issue within policing and the justice system.
           </p>

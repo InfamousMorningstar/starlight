@@ -40,10 +40,10 @@ export const StorySequence: React.FC = () => {
     <section id="story" className="relative bg-gradient-to-b from-night-800 via-night-900 to-night-900 py-32 overflow-hidden">
       {/* Background decorative text */}
       <div className="absolute inset-0 pointer-events-none opacity-5">
-        <div className="absolute top-1/4 right-20 text-[10rem] font-bold text-white select-none">
+        <div className="hidden lg:block absolute top-1/4 right-20 text-[10rem] font-bold text-white select-none">
           -28°C
         </div>
-        <div className="absolute bottom-1/3 left-10 text-5xl italic text-starlight-500 max-w-xl leading-tight select-none">
+        <div className="hidden md:block absolute bottom-1/3 left-10 text-5xl italic text-starlight-500 max-w-xl leading-tight select-none">
           "I thought I was going to die out there"
         </div>
       </div>
@@ -90,7 +90,7 @@ export const StorySequence: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="w-full bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_60px_rgba(168,85,247,0.3)] transition-all duration-500 group"
+                  className="w-full bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-6 sm:p-8 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_60px_rgba(168,85,247,0.3)] transition-all duration-500 group"
                 >
                   {/* Badges */}
                   <div className="flex gap-2 mb-6">

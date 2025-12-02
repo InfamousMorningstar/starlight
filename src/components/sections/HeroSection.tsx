@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
       </div>
       
       {/* Content Box */}
-      <div className="absolute bottom-[15vh] left-1/2 -translate-x-1/2 w-[86%] max-w-6xl h-auto bg-white/[0.02] backdrop-blur-2xl rounded-2xl border border-white/10 flex flex-col items-center justify-center text-center p-12 pb-16 z-[6]" style={{
+      <div className="absolute bottom-[10vh] md:bottom-[15vh] left-1/2 -translate-x-1/2 w-[90%] md:w-[86%] max-w-6xl h-auto bg-white/[0.02] backdrop-blur-2xl rounded-2xl border border-white/10 flex flex-col items-center justify-center text-center p-6 sm:p-8 md:p-12 pb-8 md:pb-16 z-[6]" style={{
         boxShadow: '0 0 120px rgba(168, 85, 247, 0.3), 0 -30px 80px rgba(168, 85, 247, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1)'
       }}>
         <motion.h1
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
             duration: 1.2,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="bg-gradient-to-br from-white via-starlight-100 to-starlight-500 py-4 bg-clip-text text-center text-7xl font-semibold tracking-tighter text-transparent md:text-9xl leading-none"
+          className="bg-gradient-to-br from-white via-starlight-100 to-starlight-500 py-4 bg-clip-text text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold tracking-tighter text-transparent leading-none"
         >
           Starlight Tours
         </motion.h1>

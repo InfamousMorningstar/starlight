@@ -29,7 +29,7 @@ export const BackgroundSection: React.FC = () => {
           whileInView={{ opacity: 0.15, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 2, delay: 0.6 }}
-          className="absolute top-1/2 left-1/4 text-7xl font-bold text-starlight-500/15"
+          className="hidden lg:block absolute top-1/2 left-1/4 text-7xl font-bold text-starlight-500/15"
         >
           SASKATOON
         </motion.div>
