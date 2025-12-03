@@ -9,6 +9,10 @@ import { CasesTimeline } from './components/sections/CasesTimeline';
 import { ImpactSection } from './components/sections/ImpactSection';
 import { TodaySection } from './components/sections/TodaySection';
 import { SourcesSection } from './components/sections/SourcesSection';
+import { VictimMemorial } from './components/sections/VictimMemorial';
+import { SnowEffect } from './components/ui/snow-effect';
+import { StoryProgress } from './components/ui/story-progress';
+import { CursorTrail } from './components/ui/cursor-trail';
 
 const App: React.FC = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -51,12 +55,16 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-night-900 text-white">
+      <CursorTrail color="rgba(168, 85, 247, 0.3)" size={15} />
+      <SnowEffect intensity={40} />
+      <StoryProgress />
       <Navbar />
       
       <main>
         <HeroSection />
         <BackgroundSection />
         <StorySequence />
+        <VictimMemorial />
         <CasesTimeline />
         <ImpactSection />
         <TodaySection />

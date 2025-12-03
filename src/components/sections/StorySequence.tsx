@@ -72,6 +72,27 @@ export const StorySequence: React.FC = () => {
         </p>
       </motion.div>
 
+      {/* Immersive Narrative Introduction */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+        className="max-w-4xl mx-auto mb-24 px-4 relative z-10"
+      >
+        <div className="bg-gradient-to-br from-starlight-500/15 via-purple-900/10 to-night-900/50 backdrop-blur-xl rounded-3xl border border-starlight-500/20 p-8 sm:p-10 md:p-12 shadow-[0_20px_80px_rgba(139,92,246,0.3)]">
+          <div className="space-y-6 text-gray-200 leading-relaxed">
+            <p className="text-lg md:text-xl italic text-starlight-100">
+              Imagine you are an Indigenous man leaving a friend's apartment when the police suddenly stops you, accuses you of causing trouble, and force you into the back of their cruiser. Instead of taking you to a station, they drive you to the outskirts of Saskatoon on a bitterly cold night, remove your handcuffs, and abandon you beside a power plant with no coat and no help. You start walking because stopping means freezing to death.
+            </p>
+            <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-starlight-500/30 to-transparent"></div>
+            <p className="text-base md:text-lg text-gray-300">
+              This is the story of <span className="text-starlight-300 font-semibold">Darrell Night</span>, and it reflects the same situation many others faced during the Starlight Tours, including people who did not survive.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
       {/* Story timeline */}
       <div className="relative z-10 px-4 max-w-6xl mx-auto">
         <div className="space-y-20">

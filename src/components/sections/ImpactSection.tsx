@@ -60,6 +60,27 @@ export const ImpactSection: React.FC = () => {
         </motion.div>
 
         <div className="space-y-12">
+          {/* Why Did Police Do This? */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-br from-starlight-500/10 to-purple-900/10 border border-starlight-500/30 rounded-2xl p-6 sm:p-8 md:p-10"
+          >
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Why Did Police Do This?</h3>
+            <div className="space-y-4 text-gray-300 leading-relaxed">
+              <p>
+                The government has made numerous attempts to eliminate Indigenous identity throughout history. This systematic race has permitted police officers to consider Indigenous lives less valuable, which exposes Indigenous people to significant risk. The negligent and disdainful behaviour of the government and police towards this community has created an environment of racism and hatred where it has become normal to discriminate against, kill, or abandon Indigenous people on the outskirts of the city.
+              </p>
+              <p>
+                The Starlight Tours are another way to express the police's determination to eradicate Indigenous lives. Most of the victims were last seen in police custody, which implies the power police hold in discriminating against and eradicating minority groups in society.
+              </p>
+              <p className="text-starlight-200 font-medium">
+                Since these lives did not have any value in the eyes of the government or society, their sudden deaths were not considered to be murder. Indigenous victims were always blamed and portrayed to be at fault, making society think that their deaths were insignificant.
+              </p>
+            </div>
+          </motion.div>
+
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
